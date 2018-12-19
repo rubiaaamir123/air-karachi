@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Karachi-AQI</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/iconfonts/mdi/font/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.addons.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/horizontal-layout/style.css">
+  <link rel="stylesheet" href="../../../../vendors/iconfonts/mdi/font/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.addons.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/logoresize.png" />
+</head>
+<style>
+  .nav-brand brand-logo{
+  align-self:center;
+  width: 100%;
+  margin-block-start: 30%;
+}
+.aqheader{
+  
+  font-size: 3rem;
+  color:purple;
+}
+.brand-logo{
+
+align-content: center;
+}
+#chartdiv{
+  width: 100%;
+  height: 500px;
+}
+</style>
+
+<script>
+var request = new XMLHttpRequest();
+
+// Open a new connection, using the GET request on the URL endpoint
+request.open('GET', 'https://www.airvisual.com/api/v2/node/9G2FajzzLSPD7zDy3', true);
+
+request.onload = function () {
+  var data = JSON.parse(this.response);
+
+  if (request.status >= 200 && request.status < 400) {
+    console.log(data.current.p1);
+    console.log(data.settings.node_name)
+  } else {
+    console.log('error');
+  }
+}
+  var request2 = new XMLHttpRequest();
+
+
+  request2.open('GET', 'https://www.airvisual.com/api/v2/node/cJmXcTG7Evo2jZxzz', true);
+
+request2.onload = function () {
+  var data = JSON.parse(this.response);
+
+  if (request2.status >= 200 && request2.status < 400) {
+    console.log(data.current.p1);
+    console.log(data.settings.node_name)
+  } else {
+    console.log('error');
+  }
+  
+
+}
+var request3 = new XMLHttpRequest();
+
+
+  request3.open('GET', 'https://www.airvisual.com/api/v2/node/txZ8Z7chFRLdofyTp', true);
+
+request3.onload = function () {
+  var data = JSON.parse(this.response);
+
+  if (request3.status >= 200 && request3.status < 400) {
+    console.log(data.current.p1);
+    console.log(data.settings.node_name)
+  } else {
+    console.log('error');
+  }
+  
+
+}
+var request4 = new XMLHttpRequest();
+
+
+  request4.open('GET', 'https://www.airvisual.com/api/v2/node/k7JLg776Qs4kdgkRL', true);
+
+request4.onload = function () {
+  var data = JSON.parse(this.response);
+
+  if (request4.status >= 200 && request4.status < 400) {
+    console.log(data.current.p1);
+    console.log(data.settings.node_name)
+  } else {
+    console.log('error');
+  }
+  
+
+}
+var request5 = new XMLHttpRequest();
+
+
+  request5.open('GET', 'https://www.airvisual.com/api/v2/node/FFkiLFi5GjcX69zd4', true);
+
+request5.onload = function () {
+  var data = JSON.parse(this.response);
+
+  if (request5.status >= 200 && request5.status < 400) {
+    console.log(data.current.p1);
+    console.log(data.settings.node_name)
+  } else {
+    console.log('error');
+  }
+  
+
+}
+var request6 = new XMLHttpRequest();
+
+
+  request6.open('GET', 'https://www.airvisual.com/api/v2/node/yrvHzcYXToJkq3G2B', true);
+
+request6.onload = function () {
+  var data = JSON.parse(this.response);
+
+  if (request6.status >= 200 && request6.status < 400) {
+    console.log(data.current.p1);
+    console.log(data.settings.node_name)
+  } else {
+    console.log('error');
+  }
+  
+
+}
+var request7 = new XMLHttpRequest();
+
+
+  request7.open('GET', 'https://www.airvisual.com/api/v2/node/742MWLc9Rk8jzdErL', true);
+
+request7.onload = function () {
+  var data = JSON.parse(this.response);
+
+  if (request7.status >= 200 && request7.status < 400) {
+    console.log(data.current.p1);
+    console.log(data.settings.node_name)
+  } else {
+    console.log('error');
+  }
+  
+
+}
+var request8 = new XMLHttpRequest();
+
+
+  request8.open('GET', 'https://www.airvisual.com/api/v2/node/r5u8oQHMHFK5AhoHq', true);
+
+request8.onload = function () {
+  var data = JSON.parse(this.response);
+
+  if (request8.status >= 200 && request8.status < 400) {
+    console.log(data.current.p1);
+    console.log(data.settings.node_name)
+  } else {
+    console.log('error');
+  }
+  
+
+}
+var request9 = new XMLHttpRequest();
+
+
+  request9.open('GET', 'https://www.airvisual.com/api/v2/node/aN39hznTTAf8jfLdA', true);
+
+request9.onload = function () {
+  var data = JSON.parse(this.response);
+
+  if (request9.status >= 200 && request9.status < 400) {
+    console.log(data.current.p1);
+    console.log(data.settings.node_name)
+  } else {
+    console.log('error');
+  }
+  
+
+}
+var request10 = new XMLHttpRequest();
+
+
+  request10.open('GET', 'https://www.airvisual.com/api/v2/node/gXgrK5E2d9LwCv52Q', true);
+
+request10.onload = function () {
+  var data = JSON.parse(this.response);
+
+  if (request10.status >= 200 && request10.status < 400) {
+    console.log(data.current.p1);
+    console.log(data.settings.node_name)
+  } else {
+    console.log('error');
+  }
+  
+
+}
+
+ 
+
+// Send request
+request.send();
+request2.send();
+request3.send();
+request4.send();
+request5.send();
+request6.send();
+request7.send();
+request8.send();
+request9.send();
+request10.send();
+</script>
+
+<!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/material.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<!-- <script>
+  am4core.useTheme(am4themes_material);
+  am4core.useTheme(am4themes_animated);
+var chart = am4core.create("chartdiv", am4charts.XYChart);
+
+// Add data
+chart.data = [{
+  "country": "USA",
+  "visits": 2025
+}, {
+  "country": "China",
+  "visits": 1882
+}, {
+  "country": "Japan",
+  "visits": 1809
+}, {
+  "country": "Germany",
+  "visits": 1322
+}, {
+  "country": "UK",
+  "visits": 1122
+}, {
+  "country": "France",
+  "visits": 1114
+}, {
+  "country": "India",
+  "visits": 984
+}, {
+  "country": "Spain",
+  "visits": 711
+}, {
+  "country": "Netherlands",
+  "visits": 665
+}, {
+  "country": "Russia",
+  "visits": 580
+}, {
+  "country": "South Korea",
+  "visits": 443
+}, {
+  "country": "Canada",
+  "visits": 441
+}, {
+  "country": "Brazil",
+  "visits": 395
+}];
+
+// Create axes
+
+var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "country";
+categoryAxis.renderer.grid.template.location = 0;
+categoryAxis.renderer.minGridDistance = 30;
+
+categoryAxis.renderer.labels.template.adapter.add("dy", function(dy, target) {
+  if (target.dataItem && target.dataItem.index & 2 == 2) {
+    return dy + 25;
+  }
+  return dy;
+});
+
+var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+
+// Create series
+var series = chart.series.push(new am4charts.ColumnSeries());
+series.dataFields.valueY = "visits";
+series.dataFields.categoryX = "country";
+series.name = "Visits";
+series.columns.template.tooltipText = "{categoryX}: [bold]{valueY}[/]";
+series.columns.template.fillOpacity = .8;
+
+var columnTemplate = series.columns.template;
+columnTemplate.strokeWidth = 2;
+columnTemplate.strokeOpacity = 1;
+</script> -->
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_horizontal-navbar.html -->
+    <div class="horizontal-menu">
+      <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+        <div class="container">
+          <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
+
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+
+              <div class="col-lg-12 align-items-center">
+                <!--<a class="navbar-brand brand-logo" href="index.html"><img src="../../images/inbox-logo-retina.png"
+                    alt="logo" width="200px" height="100px" /></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../../images/logo-mini.svg" alt="logo" /></a>
+              --></div>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+      <nav class="bottom-navbar">
+        <div class="container">
+          <ul class="nav page-navigation">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="mdi mdi-view-dashboard-outline menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="karachi.html">
+                <i class="mdi mdi-airplay menu-icon"></i>
+                <span class="menu-title">Karachi</span>
+              </a>
+            </li>
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="mdi mdi-google-maps menu-icon"></i>
+                <span class="menu-title">Sites</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="category-heading"></p>
+                        <div class="submenu-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/accordions.html">Accordion</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/badges.html">Badges</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/breadcrumbs.html">Breadcrumbs</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdown</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/modals.html">Modals</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/progress.html">Progress
+                                    bar</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/pagination.html">Pagination</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/tabs.html">Tabs</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/tooltips.html">Tooltip</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="category-heading">Solutions</p>
+                        <div class="submenu-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/dragula.html">Dragula</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/carousel.html">Carousel</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/clipboard.html">Clipboard</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/context-menu.html">Context
+                                    Menu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/loaders.html">Loader</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/slider.html">Slider</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/popups.html">Popup</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pages/ui-features/notifications.html">Notification</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-4">
+                    <p class="category-heading">Icons</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="pages/icons/flag-icons.html">Flag Icons</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/icons/font-awesome.html">Font Awesome</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/icons/simple-line-icon.html">Simple Line
+                          Icons</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/icons/themify.html">Themify Icons</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <li class="nav-item mega-menu">
+              <a href="#" class="nav-link">
+                <i class="mdi mdi-weather-windy menu-icon"></i>
+                <span class="menu-title">What Is Air Quality Index?</span>
+                <i class="menu-arrow"></i></a>
+              <div class="submenu">
+                <div class="col-group-wrapper row">
+                  <div class="col-group col-md-6">
+                    <p class="category-heading">Charts</p>
+                    <div class="submenu-item">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <ul>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/chartjs.html">Chart Js</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/morris.html">Morris</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/flot-chart.html">Flot</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/google-charts.html">Google
+                                Chart</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <ul>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/sparkline.html">Sparkline</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/c3.html">C3 Chart</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/chartist.html">Chartist</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/charts/justGage.html">JustGage</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Table</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="pages/tables/basic-table.html">Basic Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/tables/data-table.html">Data Table</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/tables/js-grid.html">Js-grid</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/tables/sortable-table.html">Sortable Table</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-group col-md-3">
+                    <p class="category-heading">Maps</p>
+                    <ul class="submenu-item">
+                      <li class="nav-item"><a class="nav-link" href="pages/maps/mapeal.html">Mapeal</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/maps/vector-map.html">Vector Map</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/maps/google-maps.html">Google Map</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="pages/documentation/documentation.html" class="nav-link">
+                <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                <span class="menu-title">Documentation</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-8">
+              <h1 class="aqheader">Explore The Air Quality In Your City</h1>
+            </div>
+
+            <div class="col-md-4">
+              <li class="nav-item nav-search d-none d-lg-flex">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="search">
+                      <i class="mdi mdi-magnify"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="search" aria-label="search" aria-describedby="search">
+                </div>
+              </li>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4  d-flex flex-column stretch-card">
+              <div class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-header" style="background-color: white">Karachi</div>
+                    <div class="card-body text-center" style="background-color:rgb(247, 173, 88)">
+                      <div class="text-primary mb-12">
+
+
+                        <img src="../../images/ic-face-3-orange.svg" height="100" width="auto">
+                        <h1 class="font-weight-medium mt-2" style="color:rgb(126, 49, 18)">Karachi</h1>
+                        <h1 class="font-weight-light" style="color:rgb(126, 49, 18)">Unhealthy for sensitive groups</h1>
+                        <p class="text-muted mb-0" style="font-size:4rem" style="color:rgb(126, 49, 18)">135</p>
+
+                        <p style="color:rgb(126, 49, 18)">US AQI </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="col-lg-8 stretch-card grid-margin">
+              <div class="card d-flex flex-column justify-content-between">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WL4KXTeFhIwFDAbDqLDi7nEhL3hLP9uf&z=13&ll=24.86696, 67.0002" width="auto"
+                  height="100%"  zoom=30></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="card grid-margin">
+                <div class="card-header text-center" style="background-color:orange; color: brown; font-weight: lighter;"><h5 class="font-weight-medium mt-2">Today</h5></div>
+                  <div class="card-body text-center" style="background-color:rgb(247, 173, 88)">
+                      <div class="text-primary mb-12">
+                        <img src="../../images/ic-face-3-orange.svg" height="100" width="auto">
+      
+                      <h2 class="font-weight-light" style="color:brown">Healthy</h2>
+                    <p class="text-muted mb-0" style="font-size:2rem" style="color:brown">50</p>
+                    
+                      <p style="color:brown">US AQI </p>
+                    </div></div>
+                </div>
+                <div class="card grid-margin">
+                    <div class="card-header text-center" style="background-color:rgb(207, 106, 185); color: purple; font-weight: lighter;"><h5 class="font-weight-medium mt-2">Tommorow</h5></div>
+                  <div class="card-body text-center" style="background-color:plum">
+                        <div class="text-primary mb-12">
+                          <img src="../../images/ic-face-5-purple.svg" height="100" width="auto">
+                       <h2 class="font-weight-light" style="color:purple">Healthy</h2>
+                      <p class="text-muted mb-0" style="font-size:2rem" style="color:purple">50</p>
+                       <p style="color:purple">US AQI </p>
+                      </div></div>
+                  </div>
+                  <div class="card grid-margin">
+                      <div class="card-header text-center" style="background-color:rgb(240, 86, 86); color: darkred; font-weight: lighter;"><h5 class="font-weight-medium mt-2">Next Day</h5></div>
+                   <div class="card-body text-center" style="background-color:lightcoral">
+                          <div class="text-primary mb-12">
+                            <img src="../../images/ic-face-4-red.svg" height="100" width="auto">
+                             <h2 class="font-weight-light" style="color:red">Healthy</h2>
+                        <p class="text-muted mb-0" style="font-size:2rem" style="color:red">50</p>
+                         <p style="color:red">US AQI </p>
+                        </div></div>
+                    </div>
+                    <div class="card grid-margin">
+                        <div class="card-header text-center" style="background-color:rgb(236, 247, 91); color: orange; font-weight: lighter;"><h5 class="font-weight-medium mt-2">Next Day</h5></div>
+                   <div class="card-body text-center" style="background-color:rgb(248, 255, 145)">
+                            <div class="text-primary mb-12">
+                              <img src="../../images/ic-face-2-yellow.svg" height="100" width="auto">
+                                <h2 class="font-weight-light" style="color:orange">Healthy</h2>
+                          <p class="text-muted mb-0" style="font-size:2rem" style="color:orange">50</p>
+                          
+                            <p style="color:orange">US AQI </p>
+                          </div></div>
+                      </div>
+                      <div class="card grid-margin">
+                          <div class="card-header text-center" style="background-color:rgb(102, 228, 102); color: green; font-weight: lighter;"><h5 class="font-weight-medium mt-2">Next Day</h5></div>
+                   <div class="card-body text-center" style="background-color:lightgreen">
+                              <div class="text-primary mb-12">
+                               <img src="../../images/ic-face-1-green.svg" height="100" width="auto">
+                                <h2 class="font-weight-light" style="color:green">Healthy</h2>
+                            <p class="text-muted mb-0" style="font-size:2rem" style="color:green">50</p>
+                            
+                              <p style="color:green">US AQI </p>
+                            </div></div>
+                        </div>
+                        <div class="card grid-margin">
+                            <div class="card-header text-center" style="background-color:rgb(240, 86, 86); color: darkred; font-weight: lighter;"><h5 class="font-weight-medium mt-2">Next Day</h5></div>
+                   <div class="card-body text-center" style="background-color:lightcoral">
+                           <div class="text-primary mb-12">
+                                  <img src="../../images/ic-face-4-red.svg" height="100" width="auto">
+                                   <h2 class="font-weight-light" style="color:red">Healthy</h2>
+                              <p class="text-muted mb-0" style="font-size:2rem" style="color:red">50</p>
+                              
+                                <p style="color:red">US AQI </p>
+                              </div></div>
+                          </div>
+                          <div class="card grid-margin">
+                              <div class="card-header text-center" style="background-color:rgb(240, 86, 86); color: darkred; font-weight: lighter;"><h5 class="font-weight-medium mt-2">Next Day</h5></div>
+                   <div class="card-body text-center" style="background-color:lightcoral">
+                          <div class="text-primary mb-12">
+                                    <img src="../../images/ic-face-4-red.svg" height="100" width="auto">
+                                    <h2 class="font-weight-light" style="color:red">Healthy</h2>
+                                <p class="text-muted mb-0" style="font-size:2rem" style="color:red">50</p>
+                                
+                                  <p style="color:red">US AQI </p>
+                                </div></div>
+                            </div>
+          </div>
+
+          <div class="row">
+            <!-- <div id="chartdiv"></div>
+            <div id="morris-bar-example"></div>
+          </div>  -->
+          <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title" style="width:100%">Bar chart</h4>
+                  <div id="morris-bar-example"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    <!-- content-wrapper ends -->
+    <!-- partial:partials/_footer.html -->
+    <footer class="footer">
+      <div class="w-100 clearfix">
+        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018 <a href="http://www.urbanui.com/"
+            target="_blank">Urbanui</a>. All rights reserved.</span>
+        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart-outline text-danger"></i></span>
+      </div>
+    </footer>
+    <!-- partial -->
+  </div>
+  <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../js/dashboard.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/material.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="../../../../js/off-canvas.js"></script>
+<script src="../../../../js/hoverable-collapse.js"></script>
+<script src="../../../../js/template.js"></script>
+<script src="../../../../js/settings.js"></script>
+<script src="../../../../js/todolist.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page-->
+<script src="../../../../../../js/morris.js"></script>
+<script src="../../js/morris.js"></script>
+
+  <!-- End custom js for this page-->
+</body>
+
+</html>

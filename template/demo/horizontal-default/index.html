@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>CalmUI Premium Bootstrap Admin Dashboard Template</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/iconfonts/mdi/font/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.addons.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/horizontal-layout/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+<style>
+.nav-brand brand-logo{
+  align-self:center;
+  width: 100%;
+  margin-block-start: 30%;
+}
+.aqheader{
+  
+  font-size: 3rem;
+  color:purple;
+}
+.brand-logo{
+
+align-content: center;
+}
+</style>
+<script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = {lat: -25.344, lng: 131.036};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 4, center: uluru});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+        </script>
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO2Zh7SAZe5QHLiCOpKH9mz63RVZuxDGU&callback=initMap">
+        </script>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_horizontal-navbar.html -->
+    <div class="horizontal-menu">
+        <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+          <div class="container">
+            <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
+  
+              <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+  
+                <div class="col-lg-12 align-items-center">
+                  <!--<a class="navbar-brand brand-logo" href="index.html"><img src="../../images/inbox-logo-retina.png"
+                      alt="logo" width="200px" height="100px" /></a>
+                  <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../../images/logo-mini.svg" alt="logo" /></a>
+                --></div>
+              </div>
+  
+            </div>
+          </div>
+        </nav>
+        <nav class="bottom-navbar">
+          <div class="container">
+            <ul class="nav page-navigation">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="mdi mdi-view-dashboard-outline menu-icon"></i>
+                  <span class="menu-title">Dashboard</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="karachi.html">
+                  <i class="mdi mdi-airplay menu-icon"></i>
+                  <span class="menu-title">Karachi</span>
+                </a>
+              </li>
+              <li class="nav-item mega-menu">
+                <a href="#" class="nav-link">
+                  <i class="mdi mdi-google-maps menu-icon"></i>
+                  <span class="menu-title">Sites</span>
+                  <i class="menu-arrow"></i>
+                </a>
+                <div class="submenu">
+                  <div class="col-group-wrapper row">
+                    <div class="col-group col-md-4">
+                      <div class="row">
+                        <div class="col-12">
+                          <p class="category-heading"></p>
+                          <div class="submenu-item">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <ul>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/accordions.html">Accordion</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/badges.html">Badges</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/breadcrumbs.html">Breadcrumbs</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdown</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/modals.html">Modals</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6">
+                                <ul>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/progress.html">Progress
+                                      bar</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/pagination.html">Pagination</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/tabs.html">Tabs</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/tooltips.html">Tooltip</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-group col-md-4">
+                      <div class="row">
+                        <div class="col-12">
+                          <p class="category-heading">Solutions</p>
+                          <div class="submenu-item">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <ul>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/dragula.html">Dragula</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/carousel.html">Carousel</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/clipboard.html">Clipboard</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/context-menu.html">Context
+                                      Menu</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/loaders.html">Loader</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/slider.html">Slider</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6">
+                                <ul>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/popups.html">Popup</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="pages/ui-features/notifications.html">Notification</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-group col-md-4">
+                      <p class="category-heading">Icons</p>
+                      <ul class="submenu-item">
+                        <li class="nav-item"><a class="nav-link" href="pages/icons/flag-icons.html">Flag Icons</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/icons/font-awesome.html">Font Awesome</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/icons/simple-line-icon.html">Simple Line
+                            Icons</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/icons/themify.html">Themify Icons</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="nav-item mega-menu">
+                <a href="#" class="nav-link">
+                  <i class="mdi mdi-weather-windy menu-icon"></i>
+                  <span class="menu-title">What Is Air Quality Index?</span>
+                  <i class="menu-arrow"></i></a>
+                <div class="submenu">
+                  <div class="col-group-wrapper row">
+                    <div class="col-group col-md-6">
+                      <p class="category-heading">Charts</p>
+                      <div class="submenu-item">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <ul>
+                              <li class="nav-item"><a class="nav-link" href="pages/charts/chartjs.html">Chart Js</a></li>
+                              <li class="nav-item"><a class="nav-link" href="pages/charts/morris.html">Morris</a></li>
+                              <li class="nav-item"><a class="nav-link" href="pages/charts/flot-chart.html">Flot</a></li>
+                              <li class="nav-item"><a class="nav-link" href="pages/charts/google-charts.html">Google
+                                  Chart</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-6">
+                            <ul>
+                              <li class="nav-item"><a class="nav-link" href="pages/charts/sparkline.html">Sparkline</a></li>
+                              <li class="nav-item"><a class="nav-link" href="pages/charts/c3.html">C3 Chart</a></li>
+                              <li class="nav-item"><a class="nav-link" href="pages/charts/chartist.html">Chartist</a></li>
+                              <li class="nav-item"><a class="nav-link" href="pages/charts/justGage.html">JustGage</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-group col-md-3">
+                      <p class="category-heading">Table</p>
+                      <ul class="submenu-item">
+                        <li class="nav-item"><a class="nav-link" href="pages/tables/basic-table.html">Basic Table</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/tables/data-table.html">Data Table</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/tables/js-grid.html">Js-grid</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/tables/sortable-table.html">Sortable Table</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-group col-md-3">
+                      <p class="category-heading">Maps</p>
+                      <ul class="submenu-item">
+                        <li class="nav-item"><a class="nav-link" href="pages/maps/mapeal.html">Mapeal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/maps/vector-map.html">Vector Map</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/maps/google-maps.html">Google Map</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+  
+              <li class="nav-item">
+                <a href="pages/documentation/documentation.html" class="nav-link">
+                  <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                  <span class="menu-title">Documentation</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-8">
+          <h1 class="aqheader">Explore The Air Quality In Your City</h1>
+        </div>
+       
+        <div class="col-md-4">
+          <li class="nav-item nav-search d-none d-lg-flex">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="search">
+                  <i class="mdi mdi-magnify"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="search" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-lg-8 grid-margin d-flex flex-column">
+              <div class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body text-center" style="background-color:rgb(247, 173, 88)">
+                      <div class="text-primary mb-12">
+                          
+                          
+                        <img src="../../images/ic-face-3-orange.svg" height="100" width="auto">
+                        <h1 class="font-weight-medium mt-2" style="color:rgb(126, 49, 18)">Karachi</h1>
+                      <h1 class="font-weight-light" style="color:rgb(126, 49, 18)">Unhealthy for sensitive groups</h1>
+                    <p class="text-muted mb-0" style="font-size:4rem" style="color:rgb(126, 49, 18)">135</p>
+                    
+                      <p style="color:rgb(126, 49, 18)">US AQI </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+              <div class="row flex-grow-1">
+                <div class="col-lg-4 grid-margin grid-margin-lg-0 stretch-card">
+                  <div class="card">
+                    <div class="card-body text-center" style="background-color:lightcoral">
+                        <div class="text-primary mb-12">
+                            
+                            
+                          <img src="../../images/ic-face-4-red.svg" height="100" width="auto">
+                          <p class="font-weight-medium mt-2" style="color:red">Defence Housing Society</p>
+                        <h2 class="font-weight-light" style="color:red">Unhealthy</h2>
+                      <p class="text-muted mb-0" style="font-size:2rem" style="color:red">161</p>
+                      
+                        <p style="color:red">US AQI </p>
+                      </div></div>
+                  </div>
+                </div>
+                <div class="col-lg-4 stretch-card">
+                    <div class="card">
+                        <div class="card-body text-center" style="background-color:lightcoral">
+                            <div class="text-primary mb-12">
+                                
+                                
+                              <img src="../../images/ic-face-4-red.svg" height="100" width="auto">
+                              <p class="font-weight-medium mt-2" style="color:red">Ayesha Manzil, FB Area</p>
+                            <h2 class="font-weight-light" style="color:red">Unhealthy</h2>
+                          <p class="text-muted mb-0" style="font-size:2rem" style="color:red">157</p>
+                          
+                            <p style="color:red">US AQI </p>
+                          </div></div>
+                      </div>
+                </div>
+                <div class="col-lg-4 stretch-card">
+                    <div class="card">
+                        <div class="card-body text-center" style="background-color:lightgreen">
+                            <div class="text-primary mb-12">
+                                
+                                
+                              <img src="../../images/ic-face-1-green.svg" height="100" width="auto">
+                              <p class="font-weight-medium mt-2" style="color:green">Civic Center</p>
+                            <h2 class="font-weight-light" style="color:green">Healthy</h2>
+                          <p class="text-muted mb-0" style="font-size:2rem" style="color:green">50</p>
+                          
+                            <p style="color:green">US AQI </p>
+                          </div></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card d-flex flex-column justify-content-between">
+                  <div class="card-body">
+                      <h4 class="card-title">All Sites In Karachi</h4>
+                      
+                            
+                            <div class="table-responsive">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th></th>
+                                    <th>Major City</th>
+                                    <th style="width:100px;">Us Aqi</th>
+                                    
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Defence Housing Authority</td>
+                                    
+                                    <td><label class="badge badge-danger">161</label></td>
+                                  </tr>
+                                  <tr>
+                                      <td>2</td>
+                                    <td>Aisha Manzil, FB Area</td>
+                                   
+                                    <td><label class="badge badge-danger">157</label></td>
+                                  </tr>
+                                  <tr>
+                                      <td>3</td>
+                                    <td>Civic Center</td>
+                                    
+                                    <td><label class="badge badge-success">50</label></td>
+                                  </tr>
+                                  <tr>
+                                      <td>4</td>
+                                    <td>J-Area, Korangi</td>
+                                    
+                                    <td><label class="badge badge-success">50</label></td>
+                                  </tr>
+                                  <tr>
+                                      <td>5</td>
+                                    <td>Number 3 ½, Landhi.</td>
+                                    
+                                    <td><label class="badge badge-success">50</label></td>
+                                  </tr>
+                                  <tr>
+                                      <td>3</td>
+                                    <td>Hanifabad, Orangi Town.</td>
+                                    
+                                    <td><label class="badge badge-success">50</label></td>
+                                  </tr>
+                                  <tr>
+                                      <td>3</td>
+                                    <td>Civic Center</td>
+                                    
+                                    <td><label class="badge badge-success">50</label></td>
+                                  </tr>
+                                  <tr>
+                                      <td>3</td>
+                                    <td>Civic Center</td>
+                                    
+                                    <td><label class="badge badge-success">50</label></td>
+                                  </tr>
+                                  <tr>
+                                      <td>3</td>
+                                    <td>Civic Center</td>
+                                    
+                                    <td><label class="badge badge-success">50</label></td>
+                                  </tr>
+                                 
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  
+        
+              </div>
+           
+         
+          <div class="row">
+            <div class="col-lg-12 grid-margin">
+              
+              
+              <iframe src="https://www.google.com/maps/d/embed?mid=1WL4KXTeFhIwFDAbDqLDi7nEhL3hLP9uf"  width="100%" height="500px" frameborder="0" style="border:0;" grid-margin allowfullscreen ></iframe>
+            </div>
+           
+          </div>
+         
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="w-100 clearfix">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018 <a href="http://www.urbanui.com/" target="_blank">Urbanui</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart-outline text-danger"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../js/dashboard.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
